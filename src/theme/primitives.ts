@@ -1,10 +1,35 @@
-import { createTheme, alpha, PaletteMode, Shadows } from '@mui/material/styles';
+import type { CSSObject } from '@mui/system';
+import {
+  createTheme,
+  alpha,
+  PaletteMode,
+  Shadows,
+  Theme,
+  ThemeOptions,
+} from '@mui/material/styles';
+
+interface ApplyDarkStyles {
+  (scheme: CSSObject): CSSObject;
+}
 
 declare module '@mui/material/Paper' {
   interface PaperPropsVariantOverrides {
     highlighted: true;
   }
 }
+
+declare module '@mui/material/styles' {
+  interface Theme {
+    applyDarkStyles: ApplyDarkStyles;
+  }
+}
+
+declare module '@mui/system/createTheme' {
+  interface Theme {
+    applyDarkStyles: ApplyDarkStyles;
+  }
+}
+
 declare module '@mui/material/styles/createPalette' {
   interface ColorRange {
     50: string;
@@ -231,5 +256,8 @@ export const getDesignTokens = (mode: PaletteMode) => {
       borderRadius: 8,
     },
     shadows: customShadows,
-  };
+    applyDarkStyles(css: Parameters<ApplyDarkStyles>[0]) {
+      return (this as Theme).applyStyles('dark', css);
+    },
+  } as ThemeOptions;
 };

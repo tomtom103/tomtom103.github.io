@@ -12,6 +12,7 @@ import Drawer from '@mui/material/Drawer';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import ToggleColorMode from '@components/ToggleColorMode';
+import LinkButton from '@components/LinkButton';
 
 const StyledToolbar = styled(Toolbar)(({ theme }) => ({
   display: 'flex',
@@ -52,21 +53,27 @@ export default function TopBar(props: TopBarProps) {
         <StyledToolbar variant="dense" disableGutters>
           <Box sx={{ flexGrow: 1, display: 'flex', alignItems: 'center', px: 0 }}>
             <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-              <Button variant="text" color="info" size="small">
+              <LinkButton to="/home" variant="text" color="info" size="small">
                 Home
-              </Button>
-              <Button variant="text" color="info" size="small">
+              </LinkButton>
+              <LinkButton to="/about" variant="text" color="info" size="small">
                 About
-              </Button>
-              <Button variant="text" color="info" size="small">
+              </LinkButton>
+              <LinkButton to="/skills" variant="text" color="info" size="small">
                 Skills
-              </Button>
-              <Button variant="text" color="info" size="small">
+              </LinkButton>
+              <LinkButton to="/experiences" variant="text" color="info" size="small">
                 Experiences
-              </Button>
-              <Button variant="text" color="info" size="small" sx={{ minWidth: 0 }}>
+              </LinkButton>
+              <LinkButton
+                to="/projects"
+                variant="text"
+                color="info"
+                size="small"
+                sx={{ minWidth: 0 }}
+              >
                 Projects
-              </Button>
+              </LinkButton>
             </Box>
           </Box>
           <Box

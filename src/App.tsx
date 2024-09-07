@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import CssBaseline from '@mui/material/CssBaseline';
 import Container from '@mui/material/Container';
 import { HelmetProvider } from 'react-helmet-async';
@@ -40,7 +40,7 @@ export default function App(): React.ReactElement {
       <HelmetProvider>
         <HelmetComponent />
 
-        <HashRouter>
+        <BrowserRouter>
           <TopBar mode={mode} toggleColorMode={toggleColorMode} />
           <Container
             maxWidth="lg"
@@ -57,7 +57,7 @@ export default function App(): React.ReactElement {
             <Router />
           </Container>
           <Footer />
-        </HashRouter>
+        </BrowserRouter>
       </HelmetProvider>
     </ThemeProvider>
   );
