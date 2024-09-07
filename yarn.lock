@@ -4601,6 +4601,58 @@ __metadata:
   languageName: node
   linkType: hard
 
+"portfolio@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "portfolio@workspace:."
+  dependencies:
+    "@emotion/react": "npm:^11.13.3"
+    "@emotion/styled": "npm:^11.13.0"
+    "@eslint/js": "npm:^9.9.0"
+    "@mui/icons-material": "npm:^6.0.2"
+    "@mui/lab": "npm:6.0.0-beta.9"
+    "@mui/material": "npm:^6.0.2"
+    "@mui/styles": "npm:^6.0.2"
+    "@mui/system": "npm:^6.0.2"
+    "@mui/utils": "npm:^6.0.2"
+    "@types/gh-pages": "npm:^6"
+    "@types/luxon": "npm:^3"
+    "@types/node": "npm:^22.5.3"
+    "@types/react": "npm:^18.3.3"
+    "@types/react-dom": "npm:^18.3.0"
+    "@types/tinycolor2": "npm:^1"
+    "@typescript-eslint/eslint-plugin": "npm:^7.13.0"
+    "@typescript-eslint/parser": "npm:^7.13.0"
+    "@vitejs/plugin-react-swc": "npm:^3.5.0"
+    eslint: "npm:^8.56.0"
+    eslint-config-airbnb: "npm:^19.0.4"
+    eslint-config-airbnb-typescript: "npm:^18.0.0"
+    eslint-config-prettier: "npm:^9.1.0"
+    eslint-plugin-import: "npm:^2.30.0"
+    eslint-plugin-jsx-a11y: "npm:^6.9.0"
+    eslint-plugin-prettier: "npm:^5.2.1"
+    eslint-plugin-react: "npm:^7.35.2"
+    eslint-plugin-react-hooks: "npm:^4.6.2"
+    eslint-plugin-react-refresh: "npm:^0.4.9"
+    gh-pages: "npm:^6.1.1"
+    globals: "npm:^15.9.0"
+    luxon: "npm:^3.5.0"
+    notistack: "npm:^3.0.1"
+    prettier: "npm:^3.3.3"
+    react: "npm:^18.3.1"
+    react-dom: "npm:^18.3.1"
+    react-helmet-async: "npm:^2.0.5"
+    react-router-dom: "npm:^6.26.1"
+    rollup-plugin-visualizer: "npm:^5.12.0"
+    tinycolor2: "npm:^1.6.0"
+    typescript: "npm:^5.5.3"
+    typescript-eslint: "npm:^8.0.1"
+    vite: "npm:^5.4.1"
+  peerDependencies:
+    react: ^17.0.0 || ^18.0.0
+    react-dom: ^17.0.0 || ^18.0.0
+  languageName: unknown
+  linkType: soft
+
 "possible-typed-array-names@npm:^1.0.0":
   version: 1.0.0
   resolution: "possible-typed-array-names@npm:1.0.0"
@@ -5431,58 +5483,6 @@ __metadata:
   checksum: 10c0/487988b0a19c654ff3e1961b87f471702e708fa8a8dd02a298ef16da7206692e8552a0250e8b3e8759270f62e9d8314616f6da274734d3b558b1fc7b7724e892
   languageName: node
   linkType: hard
-
-"tomtom103@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "tomtom103@workspace:."
-  dependencies:
-    "@emotion/react": "npm:^11.13.3"
-    "@emotion/styled": "npm:^11.13.0"
-    "@eslint/js": "npm:^9.9.0"
-    "@mui/icons-material": "npm:^6.0.2"
-    "@mui/lab": "npm:6.0.0-beta.9"
-    "@mui/material": "npm:^6.0.2"
-    "@mui/styles": "npm:^6.0.2"
-    "@mui/system": "npm:^6.0.2"
-    "@mui/utils": "npm:^6.0.2"
-    "@types/gh-pages": "npm:^6"
-    "@types/luxon": "npm:^3"
-    "@types/node": "npm:^22.5.3"
-    "@types/react": "npm:^18.3.3"
-    "@types/react-dom": "npm:^18.3.0"
-    "@types/tinycolor2": "npm:^1"
-    "@typescript-eslint/eslint-plugin": "npm:^7.13.0"
-    "@typescript-eslint/parser": "npm:^7.13.0"
-    "@vitejs/plugin-react-swc": "npm:^3.5.0"
-    eslint: "npm:^8.56.0"
-    eslint-config-airbnb: "npm:^19.0.4"
-    eslint-config-airbnb-typescript: "npm:^18.0.0"
-    eslint-config-prettier: "npm:^9.1.0"
-    eslint-plugin-import: "npm:^2.30.0"
-    eslint-plugin-jsx-a11y: "npm:^6.9.0"
-    eslint-plugin-prettier: "npm:^5.2.1"
-    eslint-plugin-react: "npm:^7.35.2"
-    eslint-plugin-react-hooks: "npm:^4.6.2"
-    eslint-plugin-react-refresh: "npm:^0.4.9"
-    gh-pages: "npm:^6.1.1"
-    globals: "npm:^15.9.0"
-    luxon: "npm:^3.5.0"
-    notistack: "npm:^3.0.1"
-    prettier: "npm:^3.3.3"
-    react: "npm:^18.3.1"
-    react-dom: "npm:^18.3.1"
-    react-helmet-async: "npm:^2.0.5"
-    react-router-dom: "npm:^6.26.1"
-    rollup-plugin-visualizer: "npm:^5.12.0"
-    tinycolor2: "npm:^1.6.0"
-    typescript: "npm:^5.5.3"
-    typescript-eslint: "npm:^8.0.1"
-    vite: "npm:^5.4.1"
-  peerDependencies:
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
-  languageName: unknown
-  linkType: soft
 
 "trim-repeated@npm:^1.0.0":
   version: 1.0.0
