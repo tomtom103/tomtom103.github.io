@@ -58,9 +58,6 @@ export default function TopBar(props: TopBarProps) {
         <StyledToolbar variant="dense" disableGutters>
           <Box sx={{ flexGrow: 1, display: 'flex', alignItems: 'center', px: 0 }}>
             <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-              <LinkButton to="/home" variant="text" color="info" size="small">
-                Home
-              </LinkButton>
               <LinkButton to="/about" variant="text" color="info" size="small">
                 About
               </LinkButton>
@@ -70,14 +67,11 @@ export default function TopBar(props: TopBarProps) {
               <LinkButton to="/experiences" variant="text" color="info" size="small">
                 Experiences
               </LinkButton>
-              <LinkButton
-                to="/projects"
-                variant="text"
-                color="info"
-                size="small"
-                sx={{ minWidth: 0 }}
-              >
+              <LinkButton to="/projects" variant="text" color="info" size="small">
                 Projects
+              </LinkButton>
+              <LinkButton to="/photography" variant="text" color="info" size="small">
+                Photography
               </LinkButton>
             </Box>
           </Box>
@@ -120,9 +114,6 @@ export default function TopBar(props: TopBarProps) {
                   </IconButton>
                 </Box>
                 <Divider sx={{ my: 3 }} />
-                <LinkButton to="/home" fullWidth>
-                  Home
-                </LinkButton>
                 <LinkButton to="/skills" fullWidth>
                   Skills
                 </LinkButton>
@@ -131,6 +122,9 @@ export default function TopBar(props: TopBarProps) {
                 </LinkButton>
                 <LinkButton to="/projects" fullWidth>
                   Projects
+                </LinkButton>
+                <LinkButton to="/photography" fullWidth>
+                  Photography
                 </LinkButton>
                 <MenuItem>
                   <Button
