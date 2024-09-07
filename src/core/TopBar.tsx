@@ -92,9 +92,13 @@ export default function TopBar(props: TopBarProps) {
               color="primary"
               variant="contained"
               size="small"
-              onClick={() => openInNewTab('https://google.ca')}
+              onClick={() =>
+                openInNewTab(
+                  'https://raw.githubusercontent.com/tomtom103/tomtom103.github.io/main/assets/Resume.pdf',
+                )
+              }
             >
-              View Resume
+              Download Resume
             </Button>
             <ToggleColorMode mode={mode} toggleColorMode={toggleColorMode} />
           </Box>
@@ -133,9 +137,13 @@ export default function TopBar(props: TopBarProps) {
                     color="primary"
                     variant="contained"
                     fullWidth
-                    onClick={() => openInNewTab('https://google.ca')}
+                    onClick={() =>
+                      openInNewTab(
+                        'https://raw.githubusercontent.com/tomtom103/tomtom103.github.io/main/assets/Resume.pdf',
+                      )
+                    }
                   >
-                    View Resume
+                    Download Resume
                   </Button>
                   <ToggleColorMode sx={{ ml: 2 }} mode={mode} toggleColorMode={toggleColorMode} />
                 </MenuItem>
