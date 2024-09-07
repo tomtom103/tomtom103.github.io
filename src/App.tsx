@@ -41,22 +41,24 @@ export default function App(): React.ReactElement {
         <HelmetComponent />
 
         <BrowserRouter>
-          <TopBar mode={mode} toggleColorMode={toggleColorMode} />
-          <Container
-            maxWidth="lg"
-            component="main"
-            sx={{
-              display: 'flex',
-              flexDirection: 'column',
-              my: 32,
-              gap: 4,
-              alignItems: 'center',
-              justifyContent: 'center',
-            }}
-          >
-            <Router />
+          <Container>
+            <TopBar mode={mode} toggleColorMode={toggleColorMode} />
+            <Container
+              maxWidth="lg"
+              component="main"
+              sx={{
+                display: 'flex',
+                flexDirection: 'column',
+                my: 32,
+                gap: 4,
+                alignItems: 'center',
+                justifyContent: 'center',
+              }}
+            >
+              <Router />
+            </Container>
+            <Footer />
           </Container>
-          <Footer />
         </BrowserRouter>
       </HelmetProvider>
     </ThemeProvider>

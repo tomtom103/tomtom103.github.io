@@ -44,6 +44,11 @@ export default function TopBar(props: TopBarProps) {
     setOpen(newOpen);
   };
 
+  const openInNewTab = (url: string): void => {
+    const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
+    if (newWindow) newWindow.opener = null;
+  };
+
   return (
     <AppBar
       position="fixed"
@@ -83,7 +88,12 @@ export default function TopBar(props: TopBarProps) {
               alignItems: 'center',
             }}
           >
-            <Button color="primary" variant="contained" size="small">
+            <Button
+              color="primary"
+              variant="contained"
+              size="small"
+              onClick={() => openInNewTab('https://google.ca')}
+            >
               View Resume
             </Button>
             <ToggleColorMode mode={mode} toggleColorMode={toggleColorMode} />
@@ -106,13 +116,25 @@ export default function TopBar(props: TopBarProps) {
                   </IconButton>
                 </Box>
                 <Divider sx={{ my: 3 }} />
-                <MenuItem>Home</MenuItem>
-                <MenuItem>About</MenuItem>
-                <MenuItem>Skills</MenuItem>
-                <MenuItem>Experiences</MenuItem>
-                <MenuItem>Projects</MenuItem>
+                <LinkButton to="/home" fullWidth>
+                  Home
+                </LinkButton>
+                <LinkButton to="/skills" fullWidth>
+                  Skills
+                </LinkButton>
+                <LinkButton to="/experiences" fullWidth>
+                  Experiences
+                </LinkButton>
+                <LinkButton to="/projects" fullWidth>
+                  Projects
+                </LinkButton>
                 <MenuItem>
-                  <Button color="primary" variant="contained" fullWidth>
+                  <Button
+                    color="primary"
+                    variant="contained"
+                    fullWidth
+                    onClick={() => openInNewTab('https://google.ca')}
+                  >
                     View Resume
                   </Button>
                   <ToggleColorMode sx={{ ml: 2 }} mode={mode} toggleColorMode={toggleColorMode} />
