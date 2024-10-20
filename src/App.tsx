@@ -49,10 +49,9 @@ export default function App(): React.ReactElement {
               sx={{
                 display: 'flex',
                 flexDirection: 'column',
-                my: 32,
-                gap: 4,
                 alignItems: 'center',
                 justifyContent: 'center',
+                paddingTop: 16,
               }}
             >
               <Router />

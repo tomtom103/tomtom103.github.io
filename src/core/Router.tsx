@@ -1,11 +1,11 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 import InProgress from '@components/InProgress';
+import About from '@pages/About';
 
 export default function Router() {
   return (
     <Routes>
-      {/* TODO: Add routes here */}
-      <Route path="/about" element={<div>Hello</div>} />
+      <Route path="/about" element={<About />} />
       <Route path="/" element={<Navigate to="/about" />} />
       <Route path="*" element={<InProgress />} />
     </Routes>

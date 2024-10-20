@@ -13,6 +13,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import ToggleColorMode from '@components/ToggleColorMode';
 import LinkButton from '@components/LinkButton';
+import Resume from '../data/resume.pdf';
 
 const StyledToolbar = styled(Toolbar)(({ theme }) => ({
   display: 'flex',
@@ -42,11 +43,6 @@ export default function TopBar(props: TopBarProps) {
 
   const toggleDrawer = (newOpen: boolean) => () => {
     setOpen(newOpen);
-  };
-
-  const openInNewTab = (url: string): void => {
-    const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
-    if (newWindow) newWindow.opener = null;
   };
 
   return (
@@ -84,13 +80,10 @@ export default function TopBar(props: TopBarProps) {
           >
             <Button
               color="primary"
-              variant="contained"
               size="small"
-              onClick={() =>
-                openInNewTab(
-                  'https://raw.githubusercontent.com/tomtom103/tomtom103.github.io/main/assets/Resume.pdf',
-                )
-              }
+              href={Resume}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Download Resume
             </Button>
@@ -131,11 +124,9 @@ export default function TopBar(props: TopBarProps) {
                     color="primary"
                     variant="contained"
                     fullWidth
-                    onClick={() =>
-                      openInNewTab(
-                        'https://raw.githubusercontent.com/tomtom103/tomtom103.github.io/main/assets/Resume.pdf',
-                      )
-                    }
+                    href={Resume}
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Download Resume
                   </Button>
